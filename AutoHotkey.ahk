@@ -79,7 +79,6 @@ return
 #s::
 Run www.gmail.com
 Run www.pandora.com
-Run http://confluence.sj.us.am.ericsson.se/display/vancouver/Ericsson+Vancouver
 return
 ; ====================================================================
 
