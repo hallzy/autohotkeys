@@ -1,11 +1,11 @@
 #Autohotkeys
 
-This repo contains my autohotkeys file. As far as I know, autohotkeys works only
-on Windows, but I would also like to get a linux version, and transfer the
-script to that as well. If and when that happens, it will be here.
+This repo contains my AutoHotKeys Script for Windows, and a bash script for
+Linux that mimicks the auto mouse click feature of my AutoHotKeys Script.
 
-Some features of this script include:
-* Automated mouse click when you stop moving the mouse.
+Some features of this script include (Unless otherwise specified, this only
+applies to the Windows AutoHotKeys Script):
+* Automated mouse click when you stop moving the mouse. (For Bash Script as well)
 * Remapping of the numpad with numlocks off:
     * 4 is double click
     * 5 is single left click
@@ -15,11 +15,9 @@ Some features of this script include:
   disabled).
 * winkey+g opens a new tab that goes to google.ca
 
-##Usage
+##Usage (Windows Script)
 
-As stated above, as far as I know this only works with Windows.
-
-In order to use this script on Windows, you will need to download, and install
+In order to use the AutoHotKeys script on Windows, you will need to download, and install
 [autohotkeys](https://github.com/AutoHotkey/AutoHotkey/releases/download/v1.0.48.05/AutoHotkey104805_Install.exe).
 
 Once it installs, run autohotkeys. It will ask you if you would like it to
@@ -34,3 +32,20 @@ with the script that was generated (this will ensure that it is in the correct
 place, and has the correct name for autohotkeys to find the file).
 
 The default location for the script should be in your documents folder.
+
+
+##Usage (Linux Script)
+
+This script requires that xdotool is installed. Simply install with:
+
+```bash
+$ sudo apt-get install xdotool
+```
+
+Now just save the file wherever suites your fancy, and execute it:
+
+```bash
+$ ./auto-mouse-click
+```
+
+Voila, your mouse will click itself!
