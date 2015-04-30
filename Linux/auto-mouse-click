@@ -8,31 +8,27 @@ do
   Y_INITIAL=$Y
 
   # wait for 0.2 seconds
-  sleep 0.4
+  sleep 0.2
 
   # Get an updated mouse position
   eval $(xdotool getmouselocation --shell)
   X_POST=$X
   Y_POST=$Y
 
-  # if the initial position and new position are different...
-  if [[ $X_POST != $X_INITIAL || $Y_POST != $Y_INITIAL ]]
+  # and if the difference between the initial and updated x or y coordinate is
+  # more than 10 pixels get a new position in 0.2ms to make sure that the mouse
+  # has stopped moving.
+  if [[ $X_POST > $X_INITIAL+2 || $X_POST < $X_INITIAL-2 || $Y_POST > $Y_INITIAL+2 || $Y_POST < $Y_INITIAL-2 ]]
   then
-    # and if the difference between the initial and updated x or y coordinate is
-    # more than 10 pixels get a new position in 0.2ms to make sure that the mouse
-    # has stopped moving.
-    if [[ $X_POST > $X_INITIAL+10 || $X_POST < $X_INITIAL-10 || $Y_POST > $Y_INITIAL+10 || $Y_POST < $Y_INITIAL-10 ]]
-    then
-      sleep 0.4
-      eval $(xdotool getmouselocation --shell)
-      X_POST_POST=$X
-      Y_POST_POST=$Y
+    sleep 0.2
+    eval $(xdotool getmouselocation --shell)
+    X_POST_POST=$X
+    Y_POST_POST=$Y
 
-      # If the mouse has stopped moving, then perform a click.
-      if [[ $X_POST == $X_POST_POST && $Y_POST == $Y_POST_POST ]]
-      then
-        xdotool click 1
-      fi
+    # If the mouse has stopped moving, then perform a click.
+    if [[ $X_POST == $X_POST_POST && $Y_POST == $Y_POST_POST ]]
+    then
+      xdotool click 1
     fi
   fi
 done
