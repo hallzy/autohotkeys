@@ -68,26 +68,14 @@ Capslock::esc
 ; ====================================================================
 
 ; ====================================================================
-; windows+g opens a new google tab
-#g::
-Run www.google.ca
-return
-; ====================================================================
-
-; ====================================================================
-; windows+s opens opens my startup windows.. gmail pandora and confluence
-#s::
-Run www.gmail.com
-Run www.pandora.com
-return
-; ====================================================================
-
-; ====================================================================
-; ctrl+alt+n opens new notepad
-^!n::
-IfWinExist Untitled - Notepad
-  WinActivate
-else
-  Run Notepad
-return
+; Easy typing of German Characters: ä, Ä, ö, Ö, ü, Ü and ß
+; For the umlaut letters, type the letter you want, followed by '' (two single quotes)
+; for ß type sz
+:c*:A''::{ASC 0196}
+:c*:a''::{ASC 0228}
+:c*:O''::{ASC 0214}
+:c*:o''::{ASC 0246}
+:c*:U''::{ASC 0220}
+:c*:u''::{ASC 0252}
+:c*:sz::{ASC 0223}
 ; ====================================================================
