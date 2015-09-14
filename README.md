@@ -13,7 +13,7 @@ applies to the Windows AutoHotKeys Script):
 * alt+F1 is a shortcut to toggle this script on and off.
 * Caps lock is remapped to ESC (for use with vim. Caps lock keyboard light is
   disabled).
-* winkey+g opens a new tab that goes to google.ca
+* Easy typing of German Characters: ä Ä ü Ü ö Ö and ß
 
 ##Usage (Windows Script)
 
