@@ -14,7 +14,7 @@ applies to the Windows AutoHotKeys Script):
 * Caps lock is remapped to ESC (for use with vim. Caps lock keyboard light is
   disabled).
 * Easy typing of German Characters: ä Ä ü Ü ö Ö and ß (This functionality can
-  also exist, if you use my .XCompose and .profile files from my dotfiles repo)
+  also exist in Linux, if you use my .XCompose and .profile files from my dotfiles repo)
 
 ##Usage (Windows Script)
 
