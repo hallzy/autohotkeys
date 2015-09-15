@@ -13,7 +13,8 @@ applies to the Windows AutoHotKeys Script):
 * alt+F1 is a shortcut to toggle this script on and off.
 * Caps lock is remapped to ESC (for use with vim. Caps lock keyboard light is
   disabled).
-* Easy typing of German Characters: ä Ä ü Ü ö Ö and ß
+* Easy typing of German Characters: ä Ä ü Ü ö Ö and ß (This functionality can
+  also exist, if you use my .XCompose and .profile files from my dotfiles repo)
 
 ##Usage (Windows Script)
 
