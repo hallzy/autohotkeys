@@ -1,4 +1,4 @@
-#Autohotkeys
+# Autohotkeys
 
 This repo contains my AutoHotKeys Script for Windows, and a bash script for
 Linux that mimicks the auto mouse click feature of my AutoHotKeys Script.
@@ -16,7 +16,7 @@ applies to the Windows AutoHotKeys Script):
 * Easy typing of German Characters: ä Ä ü Ü ö Ö and ß (This functionality can
   also exist in Linux, if you use my .XCompose and .profile files from my dotfiles repo)
 
-##Usage (Windows Script)
+## Usage (Windows Script)
 
 In order to use the AutoHotKeys script on Windows, you will need to download, and install
 [autohotkeys](https://github.com/AutoHotkey/AutoHotkey/releases/download/v1.0.48.05/AutoHotkey104805_Install.exe).
@@ -35,7 +35,7 @@ place, and has the correct name for autohotkeys to find the file).
 The default location for the script should be in your documents folder.
 
 
-##Usage (Linux Script)
+## Usage (Linux Script)
 
 This script requires that xdotool is installed. Simply install with:
 
